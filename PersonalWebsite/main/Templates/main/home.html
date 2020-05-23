@@ -1,42 +1,54 @@
  <!DOCTYPE html>
-
  <html>
+
   <head>
   <style>
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 20px;
+    background-color: rgba(255, 255, 255);
+    padding: 15px;
   }
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 5px solid rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    font-size: 30px;
+    background-color: rgb(215, 255, 255);
+    border: 5px solid green;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
     text-align: center;
   }
+  #circle {
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    border-radius: 50%;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+  }
+
+
   </style>
   </head>
   <body>
-  
-  <h1>Grid Elements</h1>
-  
-  <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-  
-  <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-  
   <div class="grid-container">
-    <div class="grid-item">
+    <div class="grid-item", id="circle">
       <h3> Justo Karell </h3>
     </div>
     <div class="grid-item">
-      <h3>Salhateswaste</h3>
+        <h3>Salhateswaste</h3>
       <p>Web app to match businesses who want to donate leftover food with local shelters, foodbanks, and other nonprofits who can immediately use their surplus. </p>
     </div>
-    <div class="grid-item">3</div>  
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
+    <div class="grid-item">
+      <h3>Mobility</h3>
+      <p> Bike-sharing app that allows community organizations to easily create a bike-sharing system by picking bikes from their local bike-shop. We walk users through the customization of their own bike-sharing system, and they only pay a monthly fee that covers maintenance.</p>
+    </div>  
+    <div class="grid-item">
+      <h3>ShareTrace</h3>
+      <p>I helped develop and maintain ShareTrace's website. ShareTrace is a contact-tracing app that uses Personal Data Accounts (PDAs) to store </p>
+    </div>
+    <div class="grid-item">
+    </div>
     <div class="grid-item">6</div>  
     <div class="grid-item">7</div>
     <div class="grid-item">8</div>
