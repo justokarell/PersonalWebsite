@@ -3,20 +3,35 @@
 
   <head>
   <style>
-  .grid-container {
+
+  * {
+    background-color: rgba(10, 10, 10);
+  }
+  .main-col {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". .";
+
+  }
+  .main-col .grid-container {
+    float: left
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(10, 10, 10);
     padding: 15px;
   }
-  .grid-item {
-    background-color: rgb(215, 255, 255);
-    border: 5px solid green;
+  .main-col .grid-item {
+    background-color: rgba(10, 10, 10);
+    border: 5px solid rgb(150, 100, 250);
+    border-radius: 5px;
     padding: 10px;
     margin: 10px;
     font-size: 15px;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
+    color: white;
   }
   #circle {
     width: 200px;
@@ -26,35 +41,54 @@
     font-family: "Courier New", Courier, monospace;
     font-size: 15px;
   }
-
+  .main-col .content-main {
+    background-color: rgba(10, 10, 10);
+    border: 5px solid rgb(150, 100, 250);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    color: white;
 
   </style>
   </head>
+
   <body>
-  <div class="grid-container">
-    <div class="grid-item", id="circle">
-      <h3> Justo Karell </h3>
+  <div class="main-col">
+    <div class="menu">
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3> Justo Karell </h3>
+        </div>
+        <div class="grid-item">
+            <h3>Salhateswaste</h3>
+          <p>Web app to match businesses who want to donate leftover food with local shelters, foodbanks, and other nonprofits who can immediately use their surplus. </p>
+        </div>
+        <div class="grid-item">
+          <h3>Mobility</h3>
+          <p> Bike-sharing app that allows community organizations to easily create a bike-sharing system by picking bikes from their local bike-shop. We walk users through the customization of their own bike-sharing system, and they only pay a monthly fee that covers maintenance.</p>
+        </div>  
+        <div class="grid-item">
+          <h3>ShareTrace</h3>
+          <p>I helped develop and maintain ShareTrace's website. ShareTrace is a contact-tracing app that uses Personal Data Accounts (PDAs) to store </p>
+        </div>
+        <div class="grid-item">
+
+        </div>
+        <div class="grid-item">
+          
+        </div>  
+        <div class="grid-item">
+          
+        </div> 
+      </div>
     </div>
-    <div class="grid-item">
-        <h3>Salhateswaste</h3>
-      <p>Web app to match businesses who want to donate leftover food with local shelters, foodbanks, and other nonprofits who can immediately use their surplus. </p>
+
+    <div class="content-main">
     </div>
-    <div class="grid-item">
-      <h3>Mobility</h3>
-      <p> Bike-sharing app that allows community organizations to easily create a bike-sharing system by picking bikes from their local bike-shop. We walk users through the customization of their own bike-sharing system, and they only pay a monthly fee that covers maintenance.</p>
-    </div>  
-    <div class="grid-item">
-      <h3>ShareTrace</h3>
-      <p>I helped develop and maintain ShareTrace's website. ShareTrace is a contact-tracing app that uses Personal Data Accounts (PDAs) to store </p>
-    </div>
-    <div class="grid-item">
-    </div>
-    <div class="grid-item">6</div>  
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>  
   </div>
-  
   </body>
   </html>
   
