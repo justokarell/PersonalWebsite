@@ -1,161 +1,48 @@
  <!DOCTYPE html>
 
-<head>
-    <!--{% load static %}
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link href="{% static 'tinymce/css/prism.css' %}" rel='stylesheet'>
-
-</head>
-
-<style>
-  .Map {
-    float: right;
-    margin: auto;
-    padding: 40px;
-  }
-  .Donation {
-    float: left;
-    margin: 80px;
+ <html>
+  <head>
+  <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
     padding: 20px;
-    width: 500px;
   }
-  .input-field {
-    margin: 30px;
-    padding: 20px;
-    width: 500px;
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
   }
-  textarea {
-    margin: 15px;
-  }
-  #map {
-      margin: auto;
-      height: 600px;  /* The height is 400 pixels */
-      width: 600px;  /* The width is the width of the web page */
-     }
   </style>
-
-
-<body>
-
-<!-- NAVBAR -->
-<section>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">Salhateswaste</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="About.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  </head>
+  <body>
+  
+  <h1>Grid Elements</h1>
+  
+  <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+  
+  <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+  
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3> Justo Karell </h3>
     </div>
-  </nav>
-</section>
-
-<!-- MAP -->
-<section class="Map">
-  <h3 class="center-align">My Google Maps Demo</h3>
-      <!--The div element for the map -->
-  <div id="map"></div>
-</section>
-
-
-<!-- DONATION INFORMATION -->
-<section class="Donation">
-<form>
-    <h4 class="center-align">Enter Donation Info</h4>
-    <br></br>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Disabled</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            This is an inline input field:
-            <div class="input-field inline">
-              <input id="email_inline" type="email" class="validate">
-              <label for="email_inline">Email</label>
-              <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-            </div>
-          </div>
-        </div>
-      </form>
+    <div class="grid-item">
+      <h3>Salhateswaste</h3>
+      <p>Web app to match businesses who want to donate leftover food with local shelters, foodbanks, and other nonprofits who can immediately use their surplus. </p>
     </div>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s13">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Textarea</label>
-          </div>
-        </div>
-      </form>
-    </div>
-  </form>
- </section>
-
-
-
-
-
-
-<br></br><br></br>
-
-</body> 
-
-<script src="{% static 'tinymce/js/prism.js' %}"></script>
-<script>
-
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-</script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
-
-
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>  
+  </div>
+  
+  </body>
+  </html>
+  
