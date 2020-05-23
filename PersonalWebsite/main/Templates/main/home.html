@@ -5,7 +5,7 @@
   <style>
 
   * {
-    background-color: rgba(10, 10, 10);
+    background-color: #ffffff;
   }
   .main-col {
     display: grid;
@@ -13,18 +13,44 @@
     grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: ". .";
+    background-color: #ffffff;
 
   }
   .main-col .grid-container {
-    float: left
+    float: left;
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: rgba(10, 10, 10);
+    grid-template-columns: auto auto;
+    background-color: #ffffff;
     padding: 15px;
   }
   .main-col .grid-item {
-    background-color: rgba(10, 10, 10);
-    border: 5px solid rgb(150, 100, 250);
+    transform: skew(-5deg);
+    background-color: black;
+    border: 5px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    color: #ffffff;
+  }
+  .grid-item > h3 {
+    background-color: black;
+  }
+  .grid-item > p {
+    background-color: black;
+  }
+
+
+  .main-col .content-main {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 1px 1px;
+    grid-template-areas: ". ." ". .";
+    background-color: #ffffff;
+    border: 8px solid #ffffff;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -33,26 +59,33 @@
     text-align: center;
     color: white;
   }
-  #circle {
-    width: 200px;
-    height: 200px;
-    background: blueviolet;
+  .content-main #circle-main {
+    width: 500px;
+    height: 500px;
+    background: darkgrey;
+    border: 8px solid black;
     border-radius: 50%;
     font-family: "Courier New", Courier, monospace;
     font-size: 15px;
   }
-  .main-col .content-main {
-    background-color: rgba(10, 10, 10);
-    border: 5px solid rgb(150, 100, 250);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 15px;
+  #parallelogram {
+    width: 140px;
+    height: 140px;
+    transform: skew(7deg);
+    background: darkgrey;
+    border: 8px solid black;
+    border-radius: 10%;
     font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    color: white;
+    font-size: 15px;
+  }
+  #parallelogram > h1 {
+    background-color: inherit;
+    color: black;
+    font-size: 30px;
+  }
 
   </style>
+
   </head>
 
   <body>
@@ -87,6 +120,12 @@
     </div>
 
     <div class="content-main">
+      <div id="parallelogram">
+        <h1>Header</h1>
+      </div>
+      <div id="circle-main">
+        
+      </div>
     </div>
   </div>
   </body>
