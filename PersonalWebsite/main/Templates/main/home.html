@@ -5,66 +5,69 @@
   <style>
 
   * {
-    background-color: black;
+    background-color: rgba(0, 30, 40, 0.9);
   }
-  .main-col {
+  .main-grid {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: ". .";
-    background-color: black;
+    background-color: rgba(0, 30, 40, 0.9);
 
   }
   .grid-container {
     float: left;
     display: grid;
-    grid-template-columns: auto auto;
-    background-color: black;
+    grid-template-columns: auto;
+    background-color: rgba(0, 30, 40, 0.9);
     padding: 15px;
   }
   .grid-item {
-    transform: skew(-5deg);
-    background-color: black;
-    border: 8px solid lightgray;
+    transform: skew(-4deg);
+    background-color: rgba(0, 30, 40, 0.9);
+    border: 5px solid rgba(5, 255, 255, 0.6);
     border-radius: 20px;
-    padding: 15px;
-    margin: 15px;
+    padding: 5px;
+    margin: 3%;
+    margin-left: 12%;
     font-size: 12px;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
     color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .grid-item.active {
-    background-color: black;
+    background-color: rgba(0, 30, 40, 0.9);
   }
   .grid-item:hover:not(active) {background-color: #00FF66;}
 
   .grid-item > h3 {
-    background-color: black;
+    background-color: inherit;
     font-size: 20px;
   }
   .grid-item > h2 {
-    background-color: black;
+    background-color: inherit;
     font-size: 30px;
   }
   
   .grid-item > p {
-    background-color: black;
+    background-color: rgba(0, 30, 40, 0.9);
   }
 
 
-  .main-col .content-main {
+  .main-grid .content-main {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 0.2fr 1.8fr;
     gap: 1px 1px;
     grid-template-areas: ". ." ". .";
-    background-color: black;
-    border: 10px solid darkgray;
+    background-color: rgba(0, 30, 40, 0.9);
+    border: 1px solid rgba(0, 30, 40, 0.9);
     border-radius: 15px;
-    padding: 20px;
-    margin: 5%;
+    padding: 10px;
+    margin: 2%;
     font-size: 15px;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
@@ -72,9 +75,9 @@
   }
   #talk-bubble {
     width: 450px;
-    height: 450px;
-    background: black;
-    border: 12px solid darkgray;
+    height: 0.9fr;
+    background: rgba(0, 30, 40, 0.9);
+    border: 6px solid rgba(5, 255, 255, 0.6);
     position: relative;
       -moz-border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -88,15 +91,15 @@
       width: 20px;
       height: 20px;
       border-top: 5px solid transparent;
-      border-right: 70px solid darkgray;
+      border-right: 70px solid rgba(5, 255, 255, 0.6);
       border-bottom: 5px solid transparent;
     }
   #parallelogram {
     width: 140px;
     height: 140px;
     transform: skew(0deg);
-    background: black;
-    border: 8px solid darkgray;
+    background: rgba(0, 30, 40, 0.9);
+    border: 6px solid rgba(5, 255, 255, 0.6);
     border-radius: 10%;
     font-family: "Courier New", Courier, monospace;
     font-size: 15px;
@@ -112,7 +115,7 @@
   </head>
 
   <body>
-  <div class="main-col">
+  <div class="main-grid">
     <div class="menu">
       <div class="grid-container">
         <div class="grid-item">
@@ -120,16 +123,13 @@
             Karell </h2>
         </div>
         <div class="grid-item">
-            <h3>Salhateswaste</h3>
-          <p>Web app to match businesses who want to donate leftover food with local shelters, foodbanks, and other nonprofits who can immediately use their surplus. </p>
+          <h3>Salhateswaste</h3>
         </div>
         <div class="grid-item">
           <h3>Mobility</h3>
-          <p> Bike-sharing app that allows community organizations to easily create a bike-sharing system by picking bikes from their local bike-shop. We walk users through the customization of their own bike-sharing system, and they only pay a monthly fee that covers maintenance.</p>
         </div>  
         <div class="grid-item">
           <h3>ShareTrace</h3>
-          <p>I helped develop and maintain ShareTrace's website. ShareTrace is a contact-tracing app that uses Personal Data Accounts (PDAs) to store </p>
         </div>
         <div class="grid-item">
 
