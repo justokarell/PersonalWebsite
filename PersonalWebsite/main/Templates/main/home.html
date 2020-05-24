@@ -5,7 +5,7 @@
   <style>
 
   * {
-    background-color: #ffffff;
+    background-color: black;
   }
   .main-col {
     display: grid;
@@ -13,23 +13,23 @@
     grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: ". .";
-    background-color: #ffffff;
+    background-color: black;
 
   }
   .main-col .grid-container {
     float: left;
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #ffffff;
+    background-color: black;
     padding: 15px;
   }
   .main-col .grid-item {
     transform: skew(-5deg);
     background-color: black;
-    border: 5px solid lightgray;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    border: 8px solid lightgray;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
     font-size: 12px;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
@@ -55,38 +55,50 @@
     grid-template-rows: 0.2fr 1.8fr;
     gap: 1px 1px;
     grid-template-areas: ". ." ". .";
-    background-color: #ffffff;
-    border: 8px solid #ffffff;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    background-color: black;
+    border: 10px solid darkgray;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 5%;
     font-size: 15px;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
     color: white;
   }
-  .content-main #circle-main {
-    width: 500px;
-    height: 500px;
+  #talk-bubble {
+    width: 450px;
+    height: 450px;
     background: black;
-    border: 8px solid darkgray;
-    border-radius: 50%;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 15px;
-  }
+    border: 12px solid darkgray;
+    position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+    #talk-bubble:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 46px;
+      width: 20px;
+      height: 20px;
+      border-top: 5px solid transparent;
+      border-right: 70px solid darkgray;
+      border-bottom: 5px solid transparent;
+    }
   #parallelogram {
     width: 140px;
     height: 140px;
-    transform: skew(7deg);
-    background: darkgrey;
-    border: 8px solid black;
+    transform: skew(0deg);
+    background: black;
+    border: 8px solid darkgray;
     border-radius: 10%;
     font-family: "Courier New", Courier, monospace;
     font-size: 15px;
   }
   #parallelogram > h1 {
     background-color: inherit;
-    color: black;
+    color: #ffffff;
     font-size: 30px;
   }
 
@@ -130,7 +142,7 @@
       <div id="parallelogram">
         <h1>Header</h1>
       </div>
-      <div id="circle-main">
+      <div id="talk-bubble">
         
       </div>
     </div>
