@@ -25,14 +25,23 @@
 .item-1-index {
   background-color: transparent;
   margin: auto;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .item-1-header {
   background-color: transparent;
-  color: white;
+  margin: 1pt;
+  color: black;
+  font-size: 18pt;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .item-1-description {
   background-color: transparent;
-  color: white;
+  margin: 2pt;
+  padding: 4pt;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
 }
 
 .main-container > .item-2-container {
@@ -50,10 +59,13 @@
 .item-2-index {
   background-color: transparent;
   margin: auto;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .item-2-header {
-  background-color: transparent;
+  background-color: transparent; 
   color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .item-2-description {
   background-color: transparent;
@@ -67,14 +79,16 @@
   grid-template-areas: initial;
   background-color: grey;
 }
-.item-1-container > .item-3 {
+.item-3-container > .item-3 {
   text-align: center;
   color: navy;
   background-color: blueviolet;
 }
 .item-3-index {
   background-color: transparent;
-  margin: auto;
+  margin: auto ;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .item-3-header {
   background-color: transparent;
@@ -83,6 +97,87 @@
 .item-3-description {
   background-color: transparent;
   color: white;
+}
+
+.main-container > .item-4-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: initial;
+  background-color: brown;
+}
+.item-4-container > .item-4 {
+  text-align: center;
+  color: navy;
+  background-color: blueviolet;
+}
+.item-4-index {
+  background-color: transparent;
+  margin: auto ;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.item-4-header {
+  background-color: transparent;
+  color: white;
+}
+.item-4-description {
+  background-color: transparent;
+  color: white;
+}
+
+.main-container > .item-5-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: initial;
+  background-color: beige;
+}
+.item-5-container > .item-5 {
+  text-align: center;
+  color: navy;
+  background-color: blueviolet;
+}
+.item-5-index {
+  background-color: transparent;
+  margin: auto ;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.item-5-header {
+  background-color: transparent;
+  color: navy;
+}
+.item-5-description {
+  background-color: transparent;
+  color: navy;
+}
+
+.main-container > .item-6-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: initial;
+  background-color: lightcyan;
+}
+.item-6-container > .item-6 {
+  text-align: center;
+  color: navy;
+  background-color: blueviolet;
+}
+.item-6-index {
+  background-color: transparent;
+  margin: auto ;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.item-6-header {
+  background-color: transparent;
+  color: navy;
+}
+.item-6-description {
+  background-color: transparent;
+  color: navy;
 }
 
 </style>
@@ -95,13 +190,14 @@
 <div class="main-container">
   <div class="item-1-container">
     <div class="item-1-index">
-      <h1>1</h1>
+      <h1>0</h1>
     </div>
     <div class="item-1-header">
-      <h3>Header</h3>
+      <h3>JUSTO</h3>
+      <h3>KARELL</h3>
     </div>
     <div class="item-1-description">
-      <p> Very concise description of item </p>
+      <p> Hey! Here is my website, where you can find my work, a bio, and a few other things you might want to know. </p>
     </div>
   </div>
   <div class="item-2-container">
@@ -126,7 +222,39 @@
       <p> Very concise description of item </p>
     </div>
   </div>
-
+  <div class="item-4-container">
+    <div class="item-4-index">
+      <h1>1</h1>
+    </div>
+    <div class="item-4-header">
+      <h3>Header</h3>
+    </div>
+    <div class="item-4-description">
+      <p> Very concise description of item </p>
+    </div>
+  </div>
+  <div class="item-5-container">
+    <div class="item-5-index">
+      <h1>1</h1>
+    </div>
+    <div class="item-5-header">
+      <h3>Header</h3>
+    </div>
+    <div class="item-5-description">
+      <p> Very concise description of item </p>
+    </div>
+  </div>
+  <div class="item-6-container">
+    <div class="item-6-index">
+      <h1>1</h1>
+    </div>
+    <div class="item-6-header">
+      <h3>Header</h3>
+    </div>
+    <div class="item-6-description">
+      <p> Very concise description of item </p>
+    </div>
+  </div>
 </div>
 
 </body>
