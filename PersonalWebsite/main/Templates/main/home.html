@@ -8,16 +8,21 @@
 <style>
 * box-sizing {
   box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 .main-container {
-  display: inline-grid;
+  margin: auto;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: initial;
+  width: 100vw;
+  height: 100vh;
 }
 .main-container > .item-1-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: bisque;
@@ -28,35 +33,34 @@
 }
 .item-1-index {
   background-color: transparent;
-  margin: 3pt;
+  margin: auto;
   margin-left: 8pt;
-  font-size: 18pt;
+  font-size: 24pt;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   word-wrap: break-word;
 }
 .item-1-header {
   background-color: transparent;
-  margin: 4pt;
+  margin: auto;
   color: black;
   font-size: 15pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
 }
-.item-1-description {
-  background-color: transparent;
-  margin: 3pt;
-  padding: 5pt;
-  padding-right: 12pt;
-  color: black;
-  font-size: 10pt;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: justify;
+.item-1-header > a{
+  font-size: 24pt;
+  vertical-align: center;
+  text-align: center;
+}
+.item-1-header > a:hover {
+  color: lightseagreen;
+  font-weight: 200;
 }
 
 .main-container > .item-2-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: burlywood;
@@ -66,29 +70,29 @@
   color: black;
   background-color: blueviolet;
 }
-.item-2-index {
-  background-color: transparent;
-  margin: auto;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  word-wrap: break-word;
-}
+
 .item-2-header {
-  margin: 10pt;
+  margin: auto;
   background-color: transparent; 
-  color: white;
-  font-size: 10pt;
+  color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   word-wrap: break-word;
 }
 .item-2-description {
   background-color: transparent;
-  color: white;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
+  color: black;
+  font-size: 10pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 
 .main-container > .item-3-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: grey;
@@ -98,26 +102,29 @@
   color: black;
   background-color: blueviolet;
 }
-.item-3-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+
 .item-3-header {
-  background-color: transparent;
-  color: white;
+  margin: auto;
+  background-color: transparent; 
+  color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-3-description {
   background-color: transparent;
-  color: white;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
+  color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 
 .main-container > .item-4-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: brown;
@@ -127,26 +134,28 @@
   color: black;
   background-color: blueviolet;
 }
-.item-4-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .item-4-header {
-  background-color: transparent;
-  color: white;
+  margin: auto;
+  background-color: transparent; 
+  color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-4-description {
   background-color: transparent;
-  color: white;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
+  color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 
 .main-container > .item-5-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: beige;
@@ -156,26 +165,28 @@
   color: black;
   background-color: blueviolet;
 }
-.item-5-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .item-5-header {
-  background-color: transparent;
+  margin: auto;
+  background-color: transparent; 
   color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-5-description {
   background-color: transparent;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
   color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 
 .main-container > .item-6-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: lightcyan;
@@ -185,25 +196,27 @@
   color: black;
   background-color: blueviolet;
 }
-.item-6-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .item-6-header {
-  background-color: transparent;
+  margin: auto;
+  background-color: transparent; 
   color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-6-description {
   background-color: transparent;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
   color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 .main-container > .item-7-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: rgb(169, 218, 248);
@@ -213,25 +226,27 @@
   color: black;
   background-color: blueviolet;
 }
-.item-7-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .item-7-header {
-  background-color: transparent;
+  margin: auto;
+  background-color: transparent; 
   color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-7-description {
   background-color: transparent;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
   color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 .main-container > .item-8-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: lightgreen;
@@ -241,25 +256,27 @@
   color: black;
   background-color: blueviolet;
 }
-.item-8-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .item-8-header {
-  background-color: transparent;
+  margin: auto;
+  background-color: transparent; 
   color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-8-description {
   background-color: transparent;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
   color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 .main-container > .item-9-container {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: tan;
@@ -269,21 +286,23 @@
   color: black;
   background-color: blueviolet;
 }
-.item-9-index {
-  background-color: transparent;
-  margin: auto ;
-  font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .item-9-header {
-  background-color: transparent;
+  margin: auto;
+  background-color: transparent; 
   color: black;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
 }
 .item-9-description {
   background-color: transparent;
+  margin: auto;
+  padding: 5pt;
+  padding-right: 12pt;
   color: black;
+  font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 
 </style>
@@ -299,100 +318,75 @@
       <h1>JUSTO KARELL</h1>
     </div>
     <div class="item-1-header">
-      <h3>
-        <a>RESUME</a>
-        <a>PROJECTS</a>
+        <a>RESUME</a><br>
+        <a>PROJECTS</a><br>
+        <a>SOCIAL MEDIA</a><br>
         <a>CONTACT</a>
-        <a>BIO</a>
-      </h3>
-    </div>
-    <div class="item-1-description">
-      <p> Hey! Here is my website, where you can find my work, a bio, and a few other things you might want to know. </p>
     </div>
   </div>
   <div class="item-2-container">
-    <div class="item-2-index">
-      <h1>1</h1>
-    </div>
     <div class="item-2-header">
-      <h3>SALHATESWASTE</h3>
+      <h3>RESUME</h3>
     </div>
     <div class="item-2-description">
-      <p> Salhateswaste (Sal) is a web app for businesses and non-profits  </p>
+      <h3><a>Downloads</a><br>
+          <a href="#">single-page (PDF) resume</a> <br>
+          <a href="#">multi-page (PDF) resume</a><br><br>
+          <a>Links</a><br>
+          <a href="#">Linkedin</a></h3>
     </div>
   </div>
   <div class="item-3-container">
-    <div class="item-3-index">
-      <h1>2</h1>
-    </div>
     <div class="item-3-header">
-      <h3>Header</h3>
+      <h3>SALHATESWASTE</h3>
     </div>
     <div class="item-3-description">
       <p> Very concise description of item </p>
     </div>
   </div>
   <div class="item-4-container">
-    <div class="item-4-index">
-      <h1>3</h1>
-    </div>
     <div class="item-4-header">
-      <h3>Header</h3>
+      <h3>MOBILITY</h3>
     </div>
     <div class="item-4-description">
       <p> Very concise description of item </p>
     </div>
   </div>
   <div class="item-5-container">
-    <div class="item-5-index">
-      <h1>4</h1>
-    </div>
     <div class="item-5-header">
-      <h3>Header</h3>
+      <h3>FRIENDS OF FERGUSON BOOKSTORE WEBSITE</h3>
     </div>
     <div class="item-5-description">
       <p> Very concise description of item </p>
     </div>
   </div>
   <div class="item-6-container">
-    <div class="item-6-index">
-      <h1>1</h1>
-    </div>
     <div class="item-6-header">
-      <h3>Header</h3>
+      <h3>GAME4CHANGE</h3>
     </div>
     <div class="item-6-description">
       <p> Very concise description of item </p>
     </div>
   </div>
   <div class="item-7-container">
-    <div class="item-7-index">
-      <h1>3</h1>
-    </div>
     <div class="item-7-header">
-      <h3>Header</h3>
+      <h3>TBD</h3>
     </div>
     <div class="item-7-description">
       <p> Very concise description of item </p>
     </div>
   </div>
   <div class="item-8-container">
-    <div class="item-8-index">
-      <h1>4</h1>
-    </div>
     <div class="item-8-header">
-      <h3>Header</h3>
+      <h3>SOCIAL MEDIA</h3>
     </div>
     <div class="item-8-description">
       <p> Very concise description of item </p>
     </div>
   </div>
   <div class="item-9-container">
-    <div class="item-6-index">
-      <h1>1</h1>
-    </div>
     <div class="item-9-header">
-      <h3>Header</h3>
+      <h3>CONTACT</h3>
     </div>
     <div class="item-9-description">
       <p> Very concise description of item </p>
