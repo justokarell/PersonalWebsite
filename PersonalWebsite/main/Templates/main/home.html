@@ -21,6 +21,7 @@
   height: 100vh;
 }
 .main-container > .item-1-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -59,6 +60,7 @@
 }
 
 .main-container > .item-2-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -93,6 +95,7 @@
   font-size: 12pt;
 }
 .main-container > .item-3-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -139,6 +142,7 @@
   text-align: justify;
 }
 .main-container > .item-4-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -170,6 +174,7 @@
 }
 
 .main-container > .item-5-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -202,6 +207,7 @@
 }
 
 .main-container > .item-6-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -233,6 +239,7 @@
   text-align: justify;
 }
 .main-container > .item-7-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -263,6 +270,7 @@
   text-align: justify;
 }
 .main-container > .item-8-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -292,19 +300,20 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: justify;
 }
-.main-container > .item-9-container {
+.contact-container {
+  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
   background-color: tan;
 }
-.item-9-container > .item-9 {
+.contact-container > .contact {
   text-align: center;
   color: black;
   background-color: blueviolet;
 }
-.item-9-header {
+.contact-header {
   margin: auto;
   background-color: transparent; 
   color: black;
@@ -312,7 +321,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   word-wrap: break-word;
 }
-.item-9-description {
+.contact-description {
   background-color: transparent;
   margin: auto;
   padding: 5pt;
@@ -339,7 +348,7 @@
         <a>RESUME</a><br>
         <a>PROJECTS</a><br>
         <a>SOCIAL MEDIA</a><br>
-        <a>CONTACT</a>
+        <a><button onclick="contactHighlight()">CONTACT</button></a>
     </div>
   </div>
   <div class="item-2-container">
@@ -382,7 +391,7 @@
   </div>
   <div class="item-6-container">
     <div class="item-6-header">
-      <h3>GAME4CHANGE</h3>
+      <h3>GAME 4 CHANGE</h3>
     </div>
     <div class="item-6-description">
       <p> This is a platform for video game streamers to connect with charities for charity streams. If you're a charity 
@@ -409,11 +418,11 @@
       <a href="https://www.instagram.com/justokarell/">Instagram</a><br>
     </div>
   </div>
-  <div class="item-9-container">
-    <div class="item-9-header">
+  <div class="contact-container">
+    <div class="contact-header">
       <h3>CONTACT</h3>
     </div>
-    <div class="item-9-description">
+    <div class="contact-description">
       <p> Very concise description of item </p>
     </div>
   </div>
@@ -422,7 +431,13 @@
 </body>
 
 <script>
-
+  function contactHighlight() {
+    var borderStyle = document.getElementsByClassName("contact-container").style.border;
+    if (borderStyle == "none")
+        document.getElementsByClassName("contact-container").style.border = "4pt solid black";
+    else
+        document.getElementsByClassName("contact-container").style.border = "none";
+  }
 </script>
 
 </html>
