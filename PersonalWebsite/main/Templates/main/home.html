@@ -100,15 +100,24 @@ button.social {
 }
 
 button.contact:hover {
-  color: brown;
+  color: greenyellow;
 }
+button.social:hover {
+  color: greenyellow;
+}
+button.project:hover {
+  color: greenyellow;
+}
+button.resume:hover {
+  color: greenyellow;
+}
+
 .main-container > .item-2-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: rgba(255, 255, 0, 0.226);
+  background-color: rgba(255, 51, 0, 0.397);
 }
 .item-2-container > .item-2 {
   text-align: center;
@@ -138,17 +147,15 @@ button.contact:hover {
   font-size: 12pt;
 }
 .main-container > .item-3-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: rgba(0, 0, 0, 0.100);
+  background-color: rgba(0, 81, 255, 0.486);
 }
 .item-3-container > .item-3 {
   text-align: center;
   color: black;
-  background-color: blueviolet;
 }
 
 .item-3-header {
@@ -185,12 +192,11 @@ button.contact:hover {
   text-align: justify;
 }
 .main-container > .item-4-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: rgba(0, 0, 0, 0.150);
+  background-color: rgba(81, 255, 0, 0.336);
 }
 .item-4-container > .item-4 {
   text-align: center;
@@ -217,12 +223,11 @@ button.contact:hover {
 }
 
 .main-container > .item-5-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: rgba(0, 0, 0, 0.240);
+  background-color: rgba(255, 238, 0, 0.459);
 }
 .item-5-container > .item-5 {
   text-align: center;
@@ -250,7 +255,6 @@ button.contact:hover {
 }
 
 .main-container > .item-6-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -313,7 +317,6 @@ button.contact:hover {
   text-align: justify;
 }
 .main-container > .item-8-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -344,25 +347,40 @@ button.contact:hover {
   text-align: justify;
 }
 .contact-container {
-  border: none;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: rgba(0, 128, 0, 0.342)
+  background-color: rgb(0, 0, 0);
 }
 #contact {
+  margin: 4pt transparent;
   border: 8pt solid transparent;
 }
+#project {
+  margin: 4pt transparent;
+  border: 8pt solid transparent;
+}
+#social {
+  margin: 4pt transparent;
+  border: 8pt solid transparent;
+}
+#resume {
+  margin: 4pt transparent;
+  border: 8pt solid transparent;
+}
+
+
+
 .contact-container > .contact {
   text-align: center;
-  color: black;
+  color: whitesmoke;
   background-color: blueviolet;
 }
 .contact-header {
   margin: auto;
   background-color: transparent; 
-  color: black;
+  color: whitesmoke;
   font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   word-wrap: break-word;
@@ -372,7 +390,7 @@ button.contact:hover {
   margin: auto;
   padding: 5pt;
   padding-right: 12pt;
-  color: black;
+  color: whitesmoke;
   font-size: 10pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: justify;
@@ -391,9 +409,9 @@ button.contact:hover {
       <h1>JUSTO KARELL</h1>
     </div>
     <div class="item-1-header">
-        <button class="contact" onclick="resumeHighlight()"><a>RESUME</a></button><br>
+        <button class="resume" onclick="resumeHighlight()"><a>RESUME</a></button><br>
         <button class="project" onclick="projectHighlight()"><a>PROJECTS</a></button><br>
-        <button class="contact" onclick="socialHighlight()"><a>SOCIAL MEDIA</a></button><br>
+        <button class="social" onclick="socialHighlight()"><a>SOCIAL MEDIA</a></button><br>
         <button class="contact" onclick="contactHighlight()"><a>CONTACT</a></button>
     </div>
   </div>
@@ -419,7 +437,7 @@ button.contact:hover {
         Let's say you work at a coffee shop that has 10-30 bagels leftover at the end of every day. Instead of calling a bunch of nonprofits you found on google maps, you can search our map of local nonprofits that are actively searching for your donations. <br>
     </div>
   </div>
-  <div class="item-4-container">
+  <div id="project" class="item-4-container">
     <div class="item-4-header">
       <h3>MOBILITY</h3>
     </div>
@@ -427,7 +445,7 @@ button.contact:hover {
       <p> Very concise description of item </p>
     </div>
   </div>
-  <div class="item-5-container">
+  <div id="project" class="item-5-container">
     <div class="item-5-header">
       <h3>FRIENDS OF FERGUSON BOOKSTORE WEBSITE</h3>
     </div>
@@ -435,7 +453,7 @@ button.contact:hover {
       <p> I made a version of the website for The Friends Bookstore, the used-bookstore of the Ferguon Library in Stamford, CT.</p>
     </div>
   </div>
-  <div class="item-6-container">
+  <div id="project" class="item-6-container">
     <div class="item-6-header">
       <h3>GAME 4 CHANGE</h3>
     </div>
@@ -445,7 +463,7 @@ button.contact:hover {
       </p>
     </div>
   </div>
-  <div class="item-7-container">
+  <div id="project" class="item-7-container">
     <div class="item-7-header">
       <h3>Optimization, ML, Logic</h3>
     </div>
@@ -464,7 +482,7 @@ button.contact:hover {
       <a href="https://www.instagram.com/justokarell/">Instagram</a><br>
     </div>
   </div>
-  <div id = "contact" class="contact-container">
+  <div id="contact" class="contact-container">
     <div class="contact-header">
       <h3>CONTACT</h3>
     </div>
@@ -480,30 +498,33 @@ button.contact:hover {
   function contactHighlight() {
     var borderStyle = document.getElementById("contact").style.border;
     if (borderStyle == "8pt solid transparent")
-        document.getElementById("contact").style.border = "8pt dashed brown";
+        document.getElementById("contact").style.border = "8pt solid white";
     else
         document.getElementById("contact").style.border = "8pt solid transparent";
   }
   function resumeHighlight() {
     var borderStyle = document.getElementById("resume").style.border;
     if (borderStyle == "8pt solid transparent")
-        document.getElementById("resume").style.border = "8pt dashed brown";
+        document.getElementById("resume").style.border = "8pt solid white";
     else
         document.getElementById("resume").style.border = "8pt solid transparent";
   }
   function socialHighlight() {
     var borderStyle = document.getElementById("social").style.border;
     if (borderStyle == "8pt solid transparent")
-        document.getElementById("social").style.border = "8pt dashed brown";
+        document.getElementById("social").style.border = "8pt solid white";
     else
         document.getElementById("social").style.border = "8pt solid transparent";
   }
   function projectHighlight() {
     var borderStyle = document.getElementById("project").style.border;
     if (borderStyle == "8pt solid transparent")
-        document.getElementById("project").style.border = "8pt dashed brown";
+        document.getElementById("project").style.border = "8pt solid white";
     else
         document.getElementById("project").style.border = "8pt solid transparent";
+  }
+  function projectHover() {
+    var active = document.getElementsByClassName.active.
   }
 </script>
 
