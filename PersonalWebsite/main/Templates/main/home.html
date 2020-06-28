@@ -58,7 +58,50 @@
   color: lightseagreen;
   font-weight: 200;
 }
+button.contact {
+  background:none;
+  border:none;
+  background-color: transparent;
+  margin: auto;
+  color: black;
+  font-size: 18pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+button.project {
+  background:none;
+  border:none;
+  background-color: transparent;
+  margin: auto;
+  color: black;
+  font-size: 18pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+button.resume {
+  background:none;
+  border:none;
+  background-color: transparent;
+  margin: auto;
+  color: black;
+  font-size: 18pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+button.social {
+  background:none;
+  border:none;
+  background-color: transparent;
+  margin: auto;
+  color: black;
+  font-size: 18pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
 
+button.contact:hover {
+  color: brown;
+}
 .main-container > .item-2-container {
   border: none;
   display: inline-grid;
@@ -100,7 +143,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: grey;
+  background-color: rgba(90,150,255);
 }
 .item-3-container > .item-3 {
   text-align: center;
@@ -147,7 +190,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: brown;
+  background-color: rgba(90,150,255);
 }
 .item-4-container > .item-4 {
   text-align: center;
@@ -179,7 +222,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: beige;
+  background-color: rgba(90,150,255);
 }
 .item-5-container > .item-5 {
   text-align: center;
@@ -212,12 +255,12 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: lightcyan;
+  background-color: rgba(90,150,255);
 }
 .item-6-container > .item-6 {
   text-align: center;
   color: black;
-  background-color: blueviolet;
+  background-color: brown;
 }
 .item-6-header {
   margin: auto;
@@ -244,7 +287,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: initial;
-  background-color: rgb(169, 218, 248);
+  background-color: rgba(90,150,255);
 }
 .item-6-container > .item-7 {
   text-align: center;
@@ -308,6 +351,9 @@
   grid-template-areas: initial;
   background-color: tan;
 }
+#contact {
+  border: 8pt solid transparent;
+}
 .contact-container > .contact {
   text-align: center;
   color: black;
@@ -345,10 +391,10 @@
       <h1>JUSTO KARELL</h1>
     </div>
     <div class="item-1-header">
-        <a>RESUME</a><br>
-        <a>PROJECTS</a><br>
-        <a>SOCIAL MEDIA</a><br>
-        <a><button onclick="contactHighlight()">CONTACT</button></a>
+        <button class="contact" onclick="resumeHighlight()"><a>RESUME</a></button><br>
+        <button class="project" onclick="projectHighlight()"><a>PROJECTS</a></button><br>
+        <button class="contact" onclick="socialHighlight()"><a>SOCIAL MEDIA</a></button><br>
+        <button class="contact" onclick="contactHighlight()"><a>CONTACT</a></button>
     </div>
   </div>
   <div class="item-2-container">
@@ -363,7 +409,7 @@
           <a href="#">Linkedin</a>
     </div>
   </div>
-  <div class="item-3-container">
+  <div id="project" class="item-3-container">
     <div class="item-3-header">
       <h3>SAL HATES WASTE</h3>      
     </div>
@@ -418,7 +464,7 @@
       <a href="https://www.instagram.com/justokarell/">Instagram</a><br>
     </div>
   </div>
-  <div class="contact-container">
+  <div id = "contact" class="contact-container">
     <div class="contact-header">
       <h3>CONTACT</h3>
     </div>
@@ -432,11 +478,32 @@
 
 <script>
   function contactHighlight() {
-    var borderStyle = document.getElementsByClassName("contact-container").style.border;
-    if (borderStyle == "none")
-        document.getElementsByClassName("contact-container").style.border = "4pt solid black";
+    var borderStyle = document.getElementById("contact").style.border;
+    if (borderStyle == "8pt solid transparent")
+        document.getElementById("contact").style.border = "8pt dashed brown";
     else
-        document.getElementsByClassName("contact-container").style.border = "none";
+        document.getElementById("contact").style.border = "8pt solid transparent";
+  }
+  function resumeHighlight() {
+    var borderStyle = document.getElementById("resume").style.border;
+    if (borderStyle == "8pt solid transparent")
+        document.getElementById("resume").style.border = "8pt dashed brown";
+    else
+        document.getElementById("resume").style.border = "8pt solid transparent";
+  }
+  function socialHighlight() {
+    var borderStyle = document.getElementById("social").style.border;
+    if (borderStyle == "8pt solid transparent")
+        document.getElementById("social").style.border = "8pt dashed brown";
+    else
+        document.getElementById("social").style.border = "8pt solid transparent";
+  }
+  function projectHighlight() {
+    var borderStyle = document.getElementById("project").style.border;
+    if (borderStyle == "8pt solid transparent")
+        document.getElementById("project").style.border = "8pt dashed brown";
+    else
+        document.getElementById("project").style.border = "8pt solid transparent";
   }
 </script>
 
